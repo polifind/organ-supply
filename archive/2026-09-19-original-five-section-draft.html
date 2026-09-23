@@ -12,16 +12,15 @@
   <meta property="og:type" content="article">
   <meta property="og:title" content="Organ Failure Is a Supply Problem">
   <meta property="og:description" content="Pig organs already work in people. The only problem left is making them last.">
-  <meta property="og:url" content="https://www.organabundance.com/">
-  <meta property="og:image" content="https://www.organabundance.com/og.png">
+  <meta property="og:url" content="https://organfoundry.vercel.app/">
+  <meta property="og:image" content="https://organfoundry.vercel.app/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta name="twitter:image" content="https://www.organabundance.com/og.png">
+  <meta name="twitter:image" content="https://organfoundry.vercel.app/og.png">
   <meta name="twitter:image:alt" content="An artful globe with points of light on every inhabited landmass.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Organ Failure Is a Supply Problem">
   <meta name="twitter:description" content="Pig organs already work in people. The only problem left is making them last.">
-  <link rel="canonical" href="https://www.organabundance.com/">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -429,22 +428,13 @@
   <nav class="toc" id="toc">
     <ul class="toc-list">
       <li class="toc-item active" data-section="supply"><a href="#supply">The Supply Problem</a></li>
-      <li class="toc-item" data-section="the-durability-problem"><a href="#the-durability-problem">Durability</a></li>
-      <li class="toc-item" data-section="why-replacement-beats-repair"><a href="#why-replacement-beats-repair">Replacement</a></li>
-      <li class="toc-item" data-section="it-is-not-just-kidneys"><a href="#it-is-not-just-kidneys">Longevity</a></li>
-      <li class="toc-item" data-section="every-route-to-the-same-place"><a href="#every-route-to-the-same-place">Every Route</a></li>
-      <li class="toc-item" data-section="the-problem-every-route-shares"><a href="#the-problem-every-route-shares">Immunology</a></li>
-      <li class="toc-item" data-section="the-machine-is-the-product"><a href="#the-machine-is-the-product">The Machine</a></li>
-      <li class="toc-item" data-section="the-staircase"><a href="#the-staircase">The Staircase</a></li>
-      <li class="toc-item" data-section="why-now-and-why-this-shape-of-company"><a href="#why-now-and-why-this-shape-of-company">Why Now</a></li>
-      <li class="toc-item" data-section="what-the-prize-actually-is"><a href="#what-the-prize-actually-is">The Prize</a></li>
-      <li class="toc-item" data-section="the-bottleneck-after-supply"><a href="#the-bottleneck-after-supply">The Bottleneck</a></li>
-      <li class="toc-item" data-section="what-could-stop-this"><a href="#what-could-stop-this">What Could Stop This</a></li>
-      <li class="toc-item" data-section="what-we-are-asking-of-everyone-else"><a href="#what-we-are-asking-of-everyone-else">The Ask</a></li>
-      <li class="toc-item" data-section="the-leap-we-are-asking-you-to-take"><a href="#the-leap-we-are-asking-you-to-take">The Leap</a></li>
+      <li class="toc-item" data-section="changed"><a href="#changed">What Changed</a></li>
+      <li class="toc-item" data-section="search"><a href="#search">The Search</a></li>
+      <li class="toc-item" data-section="replacement"><a href="#replacement">Replacement</a></li>
+      <li class="toc-item" data-section="cost"><a href="#cost">What It Costs</a></li>
     </ul>
   </nav>
-  <div class="wordmark">Organ Abundance</div>
+  <div class="wordmark">Organ Supply</div>
   <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay">
     <span></span>
     <span></span>
@@ -453,19 +443,10 @@
   <div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-hidden="true">
     <ul class="nav-overlay-list">
       <li><a href="#supply">The Supply Problem</a></li>
-      <li><a href="#the-durability-problem">Durability</a></li>
-      <li><a href="#why-replacement-beats-repair">Replacement</a></li>
-      <li><a href="#it-is-not-just-kidneys">Longevity</a></li>
-      <li><a href="#every-route-to-the-same-place">Every Route</a></li>
-      <li><a href="#the-problem-every-route-shares">Immunology</a></li>
-      <li><a href="#the-machine-is-the-product">The Machine</a></li>
-      <li><a href="#the-staircase">The Staircase</a></li>
-      <li><a href="#why-now-and-why-this-shape-of-company">Why Now</a></li>
-      <li><a href="#what-the-prize-actually-is">The Prize</a></li>
-      <li><a href="#the-bottleneck-after-supply">The Bottleneck</a></li>
-      <li><a href="#what-could-stop-this">What Could Stop This</a></li>
-      <li><a href="#what-we-are-asking-of-everyone-else">The Ask</a></li>
-      <li><a href="#the-leap-we-are-asking-you-to-take">The Leap</a></li>
+      <li><a href="#changed">What Changed</a></li>
+      <li><a href="#search">The Search</a></li>
+      <li><a href="#replacement">Replacement</a></li>
+      <li><a href="#cost">What It Costs</a></li>
     </ul>
   </div>
   <section class="hero">
@@ -484,125 +465,38 @@
     <hr class="essay-rule">
     <header class="essay-header">
       <h1 class="essay-title">Organ Failure Is a Supply Problem</h1>
-      <p class="essay-subtitle">Pig organs already work in people. The only problem left is making them last.</p>
-      <p class="byline">Alex Yang · Alban Longchamp</p>
     </header>
 
     <div class="essay-body">
 
-      <p class="pullquote">A gene-edited pig kidney has kept a living person alive. That experiment is done. What remains is not a discovery problem but a durability problem — finding the edits that take a graft from months to years — and durability is a search problem, which means it is a problem of speed. We are building the foundry that runs that search, and funding it with a drug-testing business that needs the exact same organs on the exact same rigs.</p>
-
       <div id="supply"></div>
-      <p class="lead"><strong>Everyone assumes your organs wear out and then you die.</strong> We have built much of modern medicine around that assumption: whole specialties exist to slow the failure of organs we cannot replace. But it is an assumption, not a law of nature. Organ failure is a supply problem, and the supply is about to be solved.</p>
-      <p>A kidney, a heart, a liver, or the lungs stop working, and there is not much anyone can do. If you are lucky you get a transplant, but a transplant needs a stranger to die at the right time and match you. Most people never get one.</p>
-      <p class="pullquote">We are surgeons. We have stood in the room. Nine people a day come off the American kidney list because they died, and thirteen more because they had grown too sick to transplant. Ninety-five thousand are still on it. The reason is never that medicine failed. It is that there was no part.</p>
-      <p><strong>An organ is a part. Parts can be replaced.</strong> We have just never had the supply.</p>
-      <p>In 2024 that changed, and almost no one outside the field noticed. Surgeons at Massachusetts General Hospital put gene-edited pig kidneys into living people, and the kidneys worked — filtering, making urine, holding a patient off dialysis. A human organ is scarce because someone has to die and match. A pig is not. <strong>You can make more.</strong> For the first time, the organ shortage stops looking like a medical problem and starts looking like an industrial one.</p>
-      <h2 id="the-durability-problem">The durability problem</h2>
-      <p>Today's pig organs do not last. The longest one ever to work in a living person ran <strong>271 days</strong> — nine months, at Massachusetts General Hospital, before the graft failed at its blood vessels. That patient went back on dialysis and then received a human kidney: the first person ever to cross from a pig organ to a human one. The bridge holds. It is just far too short.</p>
-      <p>These organs were designed to survive the immediate period after surgery, when rejection is worst. Making one last for years is a different problem, and no one has solved it yet.</p>
-      <p class="pullquote">It is engineering, not discovery. We know a pig organ can keep a person alive. We do not yet know which edits make it last.</p>
-      <p>Those edits are findable. The number of plausible combinations is enormous, but the number worth trying is not. The limit was never our understanding of rejection. <strong>It was speed.</strong></p>
-      <p>Testing one combination meant building a whole pig and waiting years for a single answer. No one could search a space that expensive. That is what has now changed. New tools can predict which edits are likely to matter, test many at once on perfused organs rather than in whole animals, and learn from each result to guide the next. <strong>The field can finally learn faster than it builds pigs.</strong></p>
-      <h2 id="why-replacement-beats-repair">Why replacement beats repair</h2>
-      <p>Most of the money aimed at aging is aimed at <em>repair</em>: senolytics to clear worn-out cells, partial reprogramming to walk a cell's clock backwards, organoids and engineered tissue to regrow function in place. We think this is the wrong altitude, and we will say so plainly.</p>
-      <p class="pullquote">Repair asks an aged organ to become young again. Replacement asks a young organ to be available. Only one of those has ever worked in a person.</p>
-      <p>Transplantation already proves the principle — a new organ restores function and extends life, reliably, today. Every rejuvenation approach is still arguing about whether its mechanism works at all. And an organoid, however elegant, has no glomerulus, no biliary tree, no whole-organ pharmacokinetics, and cannot be implanted. The properties that matter are emergent at the scale of a whole vascularised organ. They do not exist below it.</p>
-      <p><strong>A failing kidney and an old kidney are the same problem, and a new one fixes both.</strong></p>
-      <h2 id="it-is-not-just-kidneys">It is not just kidneys</h2>
-      <p>We start with kidneys because the market is largest, the surgery is best understood, and dialysis gives a patient time to survive a failure. But the kidney is the beachhead, not the thesis.</p>
-      <p>The thesis is how long people live. Go and look at what actually kills people in a rich country and you find the same short list of organs every time: the heart stops pumping, the lungs stop exchanging, the liver stops clearing, the kidneys stop filtering. Cancer and dementia aside, most people do not die of something exotic. <strong>They die because one organ reaches the end of its service life and there is no replacement part.</strong></p>
-      <p>Medicine has spent a century getting better at slowing each of those failures and has never once reversed one. Statins slow the heart's decline. Antifibrotics slow the lung's. Dialysis substitutes for the kidney without ever restoring it. Every one of these is a way of managing a descent, and none of them turns the curve back upward. A replaceable organ is the only intervention that does, and it does it for each of these systems by the same mechanism.</p>
-      <p class="pullquote">Replacement is the only longevity intervention that has already been proven in humans. We call it transplantation.</p>
-      <p>That is worth sitting with. The rejuvenation field is still arguing about whether its mechanisms work at all. Transplantation settled the question decades ago: put a working organ into a person whose own has failed, and they live years they would not otherwise have had. The intervention is proven. The only thing that has ever limited it is that each one requires a stranger to die.</p>
-      <p>So the honest way to describe the goal is not that we are curing kidney disease. <strong>We are building the supply of spare parts that a long life requires</strong>, starting with the part that has the largest market and the most forgiving failure mode.</p>
-      <p>The organs differ in one important way, and it is why we start where we do. A failing kidney has dialysis, so a kidney patient can wait, and a kidney graft that fails is survivable. There is no dialysis for a heart, a liver or a lung. For those organs the waiting list is the disease, and a graft that fails is usually fatal. That makes them harder first targets and far larger prizes.</p>
-      <p><strong>Solve supply once and you have solved it for the whole set.</strong> The immunology, the manufacturing, the regulatory path and the surgical capacity are largely shared across organs. A pig kidney that lasts ten years does not merely treat renal failure. It proves out the platform that replaces the other three.</p>
-      <h2 id="every-route-to-the-same-place">Every route to the same place</h2>
-      <p>We work on gene-edited pigs. We do not believe that is the only road, and this document is not an argument that it is. The goal is organ abundance. Anyone who gets there has our support, and several groups are taking genuinely different bets.</p>
-      <p><strong>Xenotransplantation — edited animal organs.</strong> Take a pig, remove the genes that make its tissue obviously foreign, add human regulatory genes, transplant the organ. This is the only approach that has kept a human being alive on a manufactured organ. Its problem is durability, and that problem is immunological.</p>
-      <p><strong>Blastocyst complementation — growing human organs inside animals.</strong> Engineer an animal embryo that cannot form a given organ, inject human pluripotent stem cells, and let the human cells fill the empty niche. The organ that grows is made of the patient's own cells, which would dissolve the rejection problem entirely. Hiromitsu Nakauchi's group at Stanford has pushed this furthest. Their 2026 work identified why it has been so hard: host macrophages selectively destroy the injected xenogeneic cells, a process they named xenophagocytosis, driven by an "eat-me" signal the host phagocytic receptor Axl detects. Blocking it — by overexpressing the "don't-eat-me" signal CD47, among other routes — improved interspecies pancreas complementation. That is real mechanistic progress on a problem that had been stuck. It is also still in embryos, and independent work generating a rat heart in a mouse this way produced an organ that functioned only to embryonic day 12.5.</p>
-      <p><strong>Organoids and stem-cell-derived tissue.</strong> Grow kidney tissue from induced pluripotent stem cells. Superb for disease modelling and drug screening. The blocker is plumbing: organoids do not build their own blood supply, so the core of the tissue is starved of oxygen and nutrients and cannot mature. Nothing you cannot perfuse can be implanted.</p>
-      <p><strong>Decellularised scaffolds.</strong> Strip an organ down to its extracellular matrix and reseed it with the recipient's own cells, so the architecture is natural and the cells are self. The principle is demonstrated — reseeded pancreatic scaffolds have restored measurable function in diabetic mice — but the function recovered is partial, and it does not yet reach the threshold that matters clinically.</p>
-      <p><strong>Bioprinting.</strong> Print the organ. This is the most general solution and the furthest from delivery; printing a capillary bed at the resolution and patency a kidney needs is not a scaling problem, it is an unsolved one.</p>
-      <p><strong>Better use of the organs we have.</strong> Machine perfusion is the quiet success story of the last decade: it is why liver transplants hit a record, by making organs from older and circulatory-death donors usable. It does not create supply, but it recovers a meaningful fraction of what is currently thrown away, and it is available today.</p>
-      <p class="pullquote">These are not competitors. They are parallel attempts on the same wall, and the field cannot yet tell which one goes through.</p>
-      <p>Our view is that they are unlikely to all fail and unlikely to all succeed, that the winning approach is not identifiable from here, and that the correct posture is therefore to fund several seriously rather than to pick one early. We chose pigs because that route has already kept a person alive and its remaining problem is well posed. We would be glad to be beaten by a scaffold.</p>
-      <h2 id="the-problem-every-route-shares">The problem every route shares</h2>
-      <p>Put anything into a human body that the body reads as foreign, and the immune system attacks it. This is not a xenotransplantation problem. It is the problem, and only one of the approaches above escapes it.</p>
-      <p>A human kidney from another human is attacked. That is why transplant patients take immunosuppressive drugs for the rest of their lives, and why the drugs are the thing that eventually hurts them. Calcineurin inhibitors made modern transplantation possible by cutting acute rejection, and chronic calcineurin nephrotoxicity is itself a major cause of the slow graft loss that follows. <strong>The drug that saves the kidney damages the kidney.</strong> Broad immunosuppression also removes defences the patient needs for everything else: more than a quarter of children who receive a solid organ develop cancer within thirty years, with solid cancer risk running fourteen times the general population, and infection is a constant competing risk.</p>
-      <p>This is the fact that connects every approach on the list. An organ made from the patient's own cells would need no immunosuppression at all. An edited pig organ needs less of it the more of the foreign surface you remove. A scaffold reseeded with autologous cells sits somewhere in between. <strong>Immunology is the axis the whole field is actually competing on, whatever substrate it starts from.</strong></p>
-      <p>So the work splits in two, and both halves need people.</p>
-      <p><strong>Make the organ less foreign.</strong> Every antigen removed, every human regulatory protein added, is a drug the patient does not have to take. The ceiling on this approach is that you cannot edit away a whole species, and nobody yet knows how close to human a pig organ has to look.</p>
-      <p><strong>Make the suppression smarter.</strong> Until organs are invisible to the immune system, recipients will need drugs, and the current ones are too blunt. Targeted costimulation blockade, regulatory-cell therapies, and tolerance induction through mixed chimerism all aim at the same goal: teach the immune system to accept this one organ while leaving the rest of its function intact. Mixed chimerism has already produced proof of concept — patients taken off immunosuppression entirely and keeping their grafts — but the conditioning required to get there has been harsh, with real graft-versus-host risk. Making that regimen safe is a company-sized problem on its own, and it would benefit every organ, every approach, including the human allografts being done today.</p>
-      <p><strong>A xenograft is the ideal testbed for exactly this work.</strong> The immune response is strong, fast and measurable, which means an immunosuppression regimen that works there is likely to work anywhere. That is the sense in which this company is an immunology company that happens to build organs.</p>
-      <h2 id="the-machine-is-the-product">The machine is the product</h2>
-      <p>Here is the part most people miss. Nobody is going to arrive at the durable organ by thinking hard enough. The edit set that works will be found the way every hard engineering answer is found, by iterating — and so the asset that matters is not any particular organ design. <strong>It is the loop that produces the next one.</strong></p>
-      <p>Whoever builds the fastest loop wins, and will keep winning after each individual design is obsolete.</p>
-      <p>A loop has four parts, and each has to be industrialised.</p>
-      <p><strong>1. Design.</strong> Propose the next edit set computationally, from structure, sequence and immunology, rather than from intuition. This is where the field has the most obvious headroom and the least discipline: it is easy to generate a ranked list and hard to generate one that predicts anything.</p>
-      <p><strong>2. Build.</strong> Automated gene editing at volume. Not one construct at a time by hand, but many edited cell lines in parallel, sequenced and quality-controlled without a human in the loop. Cell-line construction is currently a bottleneck measured in months, which is absurd for a step that is fundamentally liquid handling.</p>
-      <p><strong>3. Test.</strong> Perfused organs and human immune cells, not whole animals wherever it can be avoided. Animals are slow, expensive, ethically costly and imperfectly predictive. Every question you can answer on a rig instead of in a pig is an answer you get in days instead of years.</p>
-      <p><strong>4. Read.</strong> Measure the immune response comprehensively enough that a failure tells you <em>which</em> mechanism failed. Complement activation. T-cell activation and infiltration. The innate compartment — monocytes, macrophages, natural killer cells — which the human xenograft data now say is the persistent one, still activated long after the adaptive response quietens. Donor-specific antibody. Endothelial injury and thrombotic microangiopathy, the lesion that ended the longest human graft. And donor-derived cell-free DNA, which in a study of nearly three thousand kidney recipients tracked rejection independently of standard monitoring and improved detection when added to it — a signal that tells you the graft is being injured before the creatinine does.</p>
-      <p class="pullquote">A failed experiment that tells you which mechanism failed is worth more than a successful one that does not.</p>
-      <p>That is the whole design principle. Most transplant experiments are scored as survival curves, which means a graft that fails at day 40 teaches you almost nothing about what to change. Instrumenting the failure is what converts each run into a training example, and a loop that learns from failures runs on a much larger data set than one that learns only from successes.</p>
-      <p><strong>None of these four parts is novel on its own. The integration is the product.</strong> Gene editing is a service you can buy. Perfusion rigs are commercial. Immune assays are standard. What nobody has is all four wired together, running continuously, with each cycle's failure automatically shaping the next cycle's design. The company that assembles that machine does not have to be right about the current edit set. It only has to be wrong faster than everyone else.</p>
-      <h2 id="the-staircase">The staircase</h2>
-      <p>An unlimited organ supply is not a thing you fund in one leap, and we are not asking anyone to. Each stage pays for the next, and each stage is a real business before the one after it exists.</p>
-      <p><strong>1. Sell the organ as an assay.</strong> A humanised pig organ perfused ex vivo is the faithful toxicity test that pharma does not have — intact vascular delivery, real organ function, whole-organ pharmacokinetics. Liver injury has been the single most common reason drugs are pulled from the market for fifty years running: 18% of the 462 products withdrawn worldwide between 1953 and 2013. And the FDA's own position is that a normal trial of one to three thousand patients is simply too small to find it. The industry is hunting its most expensive failure mode with an instrument that cannot see it. This is revenue now, from a market that already pays.</p>
-      <p><strong>2. Let every paid run be an experiment.</strong> Each dosing run is a causal, time-resolved recording of what an intervention does to a whole human-compatible organ. The customer funds the measurement; we keep the data. This is the training signal, and nobody without perfusable human-compatible organs can generate it.</p>
-      <p><strong>3. Turn the data into a design loop.</strong> Run forward, the model predicts what an edit or a conditioning protocol does. Run in reverse, it proposes which edits reach a target — a graft that functions and is accepted. The bench then tests the proposal before it goes anywhere near a human. Match, it advances; miss, the error trains the next design.</p>
-      <p><strong>4. Replace organs in the people already out of options.</strong> Start where age has already driven an organ toward failure and the risk–benefit is unambiguous: the aging kidney headed for dialysis, the failing aging heart. Unlimited supply lets us operate earlier than scarcity ever allowed.</p>
-      <p><strong>5. Move it earlier, until it is elective.</strong> Once organs are something you can make, you stop waiting for one to fail before you replace it. You replace it early, the way people already replace a hip at sixty or get Lasik instead of living in glasses.</p>
-      <p>The drug business and the moonshot are not a distraction from each other. Same organs, same rigs, same team, two stages of the same technical programme.</p>
-      <h2 id="why-now-and-why-this-shape-of-company">Why now, and why this shape of company</h2>
-      <p>There is a second reason this is the moment, and it has nothing to do with biology. The era in which the best risk-adjusted return came from selling copies of a string is closing. Marginal costs are no longer zero; margins are compressing; capital that spent fifteen years crowding into software is looking for somewhere real to go, and it is finding capex-heavy, physically-grounded assets.</p>
-      <p class="pullquote">You cannot prompt an organ into existence. The information does not exist in the literature. It exists only in the organ, and only if you run the experiment.</p>
-      <p>That is the moat. Observational data describes states already seen; it cannot predict interventions never tried. Animal models mispredict human outcomes and cannot be run at the necessary coverage. And no model, however capable, can deduce what a given edit does to a given organ without someone doing it. <strong>Intelligence without this data is speculation. This data without intelligence is noise.</strong> The binding constraint is the interventional data, and we are the substrate that produces it.</p>
-      <h2 id="what-the-prize-actually-is">What the prize actually is</h2>
-      <p>Organ supply in America is already nationalised, and almost nobody says it out loud. The National Organ Transplant Act of 1984 made it a federal crime to transfer a human organ for valuable consideration, and created a single national network, operated under federal contract, to decide who gets what. That architecture is not ideology. It is the only honest response to a fixed pool: when supply cannot be increased, the only question left is who gets the one kidney, and a country answers that question with law.</p>
-      <p class="pullquote">Every rule in transplantation is a rationing rule. Rationing is what you do when you cannot manufacture.</p>
-      <p>Manufacturing dissolves the premise. You do not allocate a thing you can make more of. The list, the priority points, the allocation districts, the whole ethics of who deserves the organ — all of it exists because the input is a dying stranger. Replace the input and the apparatus becomes an artifact of the period when we could not build the part.</p>
-      <p>Then consider the size of what is being rationed. Medicare spent <strong>$37.1 billion</strong> on end-stage renal disease in 2020 — about <strong>6% of the entire programme for roughly 1% of its beneficiaries</strong>. Every dollar of it buys maintenance rather than repair: dialysis keeps a person alive without ever making them well. And that is one organ, in one country. Livers, hearts and lungs sit behind it, and every developed economy has the same arithmetic on its books.</p>
-      <p>Look at who collects that money today. Two companies run most of the world's dialysis. DaVita booked <strong>$13.6 billion</strong> in revenue in 2025. Fresenius Medical Care, which treated <strong>300,339 patients across 3,676 clinics worldwide</strong> as of mid-2025, books around <strong>EUR 19 billion</strong> a year. Roughly <strong>$35 billion of annual revenue between them</strong>, and DaVita takes about two-thirds of its US dollars from government payers, chiefly Medicare. This is not a market that a company created. It is a market the state pays for, because the alternative is letting people die of a filtration problem.</p>
-      <p class="pullquote">Thirty-five billion dollars a year, worldwide, to not fix the organ.</p>
-      <p>Now look at what the market thinks those businesses are worth: roughly <strong>$25 billion of combined market capitalisation</strong> — less than a single year of their combined revenue. Investors are not pricing dialysis as a growth industry. They are pricing it as an annuity on a population that cannot get better, in a business with no path to a cure, and they are right to. <strong>A cure is precisely what a durable organ is</strong>, which is why the incumbent's valuation is not the ceiling for this category. It is the floor being replaced.</p>
-      <p>And the surgery itself is among the most valuable in medicine. Milliman's 2025 estimates put billed charges for a double-lung transplant at <strong>$2.3 million</strong>, a heart at <strong>$1.9 million</strong>, a single lung at <strong>$1.8 million</strong>, an intestine at <strong>$1.7 million</strong> — the highest of any single-organ or tissue transplant in the United States. Transplant is already one of the highest-value procedures a hospital performs. Today the binding input is free and unobtainable: a dead stranger who matches. <strong>Make that input manufacturable and you have converted the scarcest step in the most expensive procedures in medicine into a product with a supplier.</strong></p>
-      <p><strong>The company that produces organs at scale and owns the supply chain will be worth a trillion dollars</strong>, because it is not selling a therapy for a disease. It is selling the part, for every disease that ends in an organ failing — and that is most of the ways people die. Dialysis is a subscription to not dying, priced at tens of thousands a year per patient, and it is the single organ with a stopgap. Hearts, livers and lungs have no equivalent. Price a durable replacement anywhere below the lifetime cost of managing the failure and the arithmetic works in every one of those markets at once.</p>
-      <p>The country that hosts that capability compounds the advantage: it stops paying the maintenance bill, it returns to work people who currently spend three days a week attached to a machine, and it exports the part to everyone else. Industrial capabilities accrue to nations, not only to firms.</p>
-      <p><strong>Which is why we expect this to be nationalised, and why we are saying so in our own manifesto.</strong> The precedent is not speculative — it is already the law. Every developed government has decided that organ allocation is too consequential to leave to markets, and the United States made it a crime to price a kidney. Nothing about manufacturing reverses that judgment; if anything it sharpens it. A government that pays for the failure, regulates the product, and answers to the people on the list will not stay a passive customer of the only firm that makes the part.</p>
-      <p>We think the honest posture is to expect that outcome and build for it: work with regulators early rather than around them, treat the machine and the manufacturing capability as the durable asset rather than any monopoly on a specific organ, and accept that the terminal state is probably a regulated utility of extraordinary scale rather than an unconstrained monopoly. That is still one of the most valuable companies ever built. It is also the version that deserves to exist.</p>
-      <h2 id="the-bottleneck-after-supply">The bottleneck after supply</h2>
-      <p>Solve supply and the constraint moves. It does not disappear.</p>
-      <p>First look at what the current system spends its effort on. In 2023 the United States performed a record <strong>28,142</strong> kidney transplants — and still did not use <strong>27.9%</strong> of the deceased-donor kidneys it recovered, rising to <strong>72.2%</strong> for donors aged 65 and over and <strong>72.5%</strong> for kidneys with a donor profile index of 85% or higher. Those organs were mostly not discarded for want of a recipient. They were judged too marginal to be worth the risk, under time pressure, with no better option on the shelf.</p>
-      <p class="pullquote">A quarter of the supply is thrown away on quality grounds. A manufactured organ has no donor age and no profile index.</p>
-      <p>That is what scarcity looks like from the inside: a fixed pool of imperfect parts, and an apparatus whose main job is deciding which ones are not good enough. Manufacturing removes that job entirely.</p>
-      <p>The constraint then moves to capacity. The limiting factors become transplant surgeons, operating rooms and hospital beds, none of which scale the way a barn does. The American Society of Transplant Surgeons has on the order of two thousand members; the number of people worldwide who can perform these operations is small enough to be a rounding error against the number who need one. It takes over a decade to train one of us, and that number has not moved in a generation.</p>
-      <p><strong>This is the constraint we can start relieving today, before any of the biology lands.</strong> Expand transplant surgery training positions now. Fund fellowships now. Build theatre capacity in the centres that will do this work. A decade of lead time means the decision to train the surgeons for 2040 is a decision being made this year, by default, by not making it. Markets and institutions do respond to visible demand, but they respond with a lag exactly as long as the training pipeline, which is why the signal has to be sent before the organs arrive rather than after.</p>
-      <p>We think that constraint has its own curve, running on a different clock. The operation is a mechanical task performed in a confined field to millimetre tolerances, which is a fair description of the work robotics is improving at fastest, and a great deal of serious capital is already committed to that bet. The two curves do not have to be matched precisely. Autonomy has to arrive before unlimited organs make surgeon-hours the binding constraint, and on current trajectories it will.</p>
-      <p class="pullquote">This is the most speculative claim in this document, and we would rather mark it than bury it.</p>
-      <p>Nothing in the staircase depends on it. But if you are asking where the ceiling is, the ceiling is not biology and it is not supply. It is how many operations a civilisation can perform in a day — a number fixed for a century by how long it takes to train a pair of hands. That number will not stay fixed.</p>
-      <h2 id="what-could-stop-this">What could stop this</h2>
-      <p>It is not free. Long-term rejection may need more edits, or trickier ones, than expected. Making genetically identical animals at scale is a hard manufacturing problem that nobody has solved at volume. Getting the organ approved is slow, and the process can turn political. Durable immune acceptance in an elective, non-terminal recipient is a far higher bar than in a dying one, and we should not pretend otherwise. <strong>That is why this takes a decade and not a year.</strong> None of it stops the thing from happening.</p>
-      <h2 id="what-we-are-asking-of-everyone-else">What we are asking of everyone else</h2>
-      <p>We are one company taking one route, and one company cannot deliver organ abundance. The supply chain that ends in a transplanted organ has a dozen links, and almost every one of them is currently understaffed, underfunded or unprepared. If you are reading this and you are not going to build pigs, there is still a link with your name on it.</p>
-      <p><strong>Surgeons and the people who train them.</strong> Open more transplant training positions, this year. The pipeline is longer than the biology.</p>
-      <p><strong>Transplant physicians and immunologists.</strong> The immunosuppression problem is the shared bottleneck of every approach on the list, and it is underpopulated relative to its importance. A regimen that is durable without being toxic is worth as much as any organ.</p>
-      <p><strong>Biotech founders.</strong> Tolerance induction, targeted costimulation blockade, regulatory-cell therapy, automated cell-line engineering, perfusion hardware, immune-monitoring assays. Every one of these is a company, and every one of them is worth more in a world with unlimited organs than in this one.</p>
-      <p><strong>Investors.</strong> Fund several approaches, not one. Nobody can identify the winning route from here, and a portfolio is the only rational response to that uncertainty. This is also a category where the timelines are set by gestation and by primate studies, so the capital has to be patient in a way software capital is not.</p>
-      <p><strong>Regulators — the FDA and its counterparts worldwide.</strong> Start writing the frameworks now. What is the approval pathway for a manufactured organ? What is the evidentiary standard for durability when the endpoint is ten years and the trial cannot be? How does a manufactured organ enter an allocation system built around scarcity? These questions will take years to answer and the answers are on the critical path. Beginning them before the product exists is the single highest-leverage thing a regulator can do.</p>
-      <p><strong>Agricultural and industrial operators.</strong> Designated-pathogen-free facilities at scale, cold chain, logistics, manufacturing quality systems. This is a physical supply chain and it will be built by people who already know how to build physical supply chains, not by biologists.</p>
-      <p><strong>Payers and health systems.</strong> Model what happens to your costs when a durable organ becomes purchasable. The answer determines how fast this is adopted, and it should be worked out before the first invoice.</p>
-      <p>And it will be faster than any of these groups currently plan for, because two other curves are bending underneath all of it. Software that designs and predicts is improving quickly enough to compress the design half of the loop, and robotics is improving quickly enough to eventually relieve the surgical constraint. Neither is a substitute for the biology. Both change how quickly the biology can be searched.</p>
-      <p class="pullquote">None of this requires anyone to agree with us about pigs. It only requires agreeing that organ abundance is coming, and that the parts of it outside the laboratory have longer lead times than the parts inside it.</p>
-      <h2 id="the-leap-we-are-asking-you-to-take">The leap we are asking you to take</h2>
-      <p>Most predictions ask you to believe something that has not happened yet. This one rests on something that already has. <strong>A pig organ has kept a person alive.</strong> What is left is making it last.</p>
-      <p>You do not have to believe anything about aging, or any biology we do not yet understand. You do not have to believe a cell can be made young. You only have to believe that a part that works for months can be made to work for years.</p>
-      <p class="pullquote">That is a small leap, not a large one. And it is the only one we are asking you to make.</p>
-      <p>The world still treats organ failure as permanent. It is not. Medicine has always been organised around scarcity — triage, allocation, waitlists, the whole moral architecture of deciding who gets the one kidney. <strong>Once replacement becomes easier than repair, all of that reorganises around abundance.</strong></p>
-      <p>Replace parts as they wear out, and organ failure stops being a way you die.</p>
+      <p class="lead">Everyone assumes your organs wear out and then you die. We have built much of modern medicine around that assumption: whole specialties exist to slow the failure of organs we cannot replace. But it is an assumption, not a law of nature. Organ failure is a supply problem, and the supply can now be built.</p>
+      <p>A kidney, a heart, a liver, or the lungs stop working, and there is not much anyone can do. If you are lucky, you get a transplant, but a transplant needs a stranger to die at the right time and match you. Most people never get one. We are surgeons, and we watch them die on the waitlist.</p>
+      <p class="pullquote">An organ is a part. Parts can be replaced. We have just never had the supply.</p>
 
-      <p class="essay-footer">Our stake. We are transplant surgeons. We are not writing this from outside the problem — we are the people who will carry the organ into the room and put it in, and who will sit with the family if it fails. That is what we are putting in.</p>
+      <h2 id="changed">What Changed</h2>
+      <p>Last year that changed, and almost no one noticed. Surgeons at Massachusetts General Hospital put gene-edited pig kidneys into living people, and for the first time a manufactured organ kept a person alive. A human organ is scarce because someone has to die and match. A pig is not. You can make more.</p>
+      <p class="pivot">But today's pig organs fail too soon. The record is under a year. They were designed to survive the immediate rejection after surgery, not the slower kind that follows. What is left is not whether it works, but which edits make it durable.</p>
+      <p class="pullquote">The organ shortage is now an engineering and industrial problem, not a medical one.</p>
+
+      <h2 id="search">The Search</h2>
+      <p>The number of plausible combinations is enormous, but the number worth trying is not. The limit was not our understanding of rejection. It was speed.</p>
+      <p>Testing one combination meant building a whole pig and waiting years for a single answer. No one could search a space that expensive.</p>
+      <p>That is what has now changed. New tools can predict which edits are likely to matter, test many at once, and learn from each result to guide the next. The field can finally learn faster than it builds pigs. The organs already function for months. A pig organ that lasts for years can be built this decade.</p>
+
+      <h2 id="replacement">Replacement</h2>
+      <p>Once organs are something you can make, you stop waiting for one to fail before you replace it. You replace it early, the way people already replace a hip at sixty or get Lasik instead of living in glasses.</p>
+      <p>There is no reason to stop at sick organs. A failing kidney and an old kidney are the same problem, and a new one fixes both.</p>
+      <p class="pullquote">Replace parts as they wear out, and organ failure stops being a way you die.</p>
+      <p>Most predictions ask you to believe something that has not happened yet. This one rests on something that already has. A pig organ has kept a person alive.</p>
+      <p>You do not have to believe anything about aging, or any biology we do not yet understand. You only have to believe that a part that works for months can be made to work for years. That is a small leap, not a large one.</p>
+
+      <h2 id="cost">What It Costs</h2>
+      <p>It is not free. Long-term rejection may need more edits, or trickier ones, than expected. Making genetically identical animals at scale is its own hard problem. Getting the organ approved is slow, and the process can turn political. That is why this takes a decade and not a year. None of it makes the problem unsolvable. It only means someone has to solve it.</p>
+      <p>We are surgeons, engineers, and founders. This is the problem we have set out to solve.</p>
+      <p>The world still treats organ failure as permanent. It is not. The first customers will be decabillionaires buying their own organ supply. And then every government in the world.</p>
+      <p class="closing">Medicine has spent its whole history repairing organs because it could not replace them. Once organs can be manufactured, medicine reorganizes around replacement.</p>
+
     </div>
 
     <div class="share-row">
@@ -637,7 +531,7 @@
     (function() {
       var toc = document.getElementById('toc');
       var items = toc.querySelectorAll('.toc-item');
-      var sections = ['supply', 'the-durability-problem', 'why-replacement-beats-repair', 'it-is-not-just-kidneys', 'every-route-to-the-same-place', 'the-problem-every-route-shares', 'the-machine-is-the-product', 'the-staircase', 'why-now-and-why-this-shape-of-company', 'what-the-prize-actually-is', 'the-bottleneck-after-supply', 'what-could-stop-this', 'what-we-are-asking-of-everyone-else', 'the-leap-we-are-asking-you-to-take'];
+      var sections = ['supply', 'changed', 'search', 'replacement', 'cost'];
       var essay = document.getElementById('thesis');
       function update() {
         var essayTop = essay.getBoundingClientRect().top + window.scrollY;
