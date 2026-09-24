@@ -192,10 +192,10 @@
       margin-bottom: 0.7rem;
       break-after: avoid;
     }
-    @media (min-width: 768px) {
-  
-    /* figure: portrait-tight variant on phones */
-    .essay-body .fig { margin: 1.8rem 0 1.6rem; }
+
+    .essay-body .fig {
+      margin: 1.8rem 0 1.6rem;
+    }
     .essay-body .fig img {
       display: block;
       width: 100%;
@@ -210,7 +210,6 @@
       .essay-body .fig .wide { display: block; }
       .essay-body .fig .tall { display: none; }
     }
-    /* long tokens must never force horizontal scroll */
     .essay-body, .essay-body p, .essay-body .pullquote, .essay-body h2 {
       overflow-wrap: break-word;
       word-wrap: break-word;
@@ -291,8 +290,6 @@
       
       .essay-body .pullquote { font-size: 23px; margin: 1.8rem 0; padding: 0.3rem 0 0.3rem 1.2rem; }
       .essay-body h2 { font-size: 28px; margin-top: 2.8rem; margin-bottom: 0.9rem; }
-    @media (min-width: 768px) {
-    }
     .essay-body .closing { padding-top: 1rem; margin-top: 0.5rem; }
     }
     @media (min-width: 768px) {
@@ -331,8 +328,8 @@
     /* ---- Hamburger + overlay nav ---- */
     .nav-toggle {
       position: fixed;
-      top: 1rem;
-      right: 1rem;
+      top: 1.25rem;
+      right: 1.25rem;
       z-index: 200;
       width: 44px;
       height: 44px;
