@@ -1,0 +1,21 @@
+{
+ "name": "Organ Abundance",
+ "short_name": "Organ Abundance",
+ "description": "Pig organs already work in people. The only problem left is making them last.",
+ "start_url": "/",
+ "display": "browser",
+ "background_color": "#fcfaf6",
+ "theme_color": "#ffffff",
+ "icons": [
+  {
+   "src": "/f192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/apple-touch-icon.png",
+   "sizes": "180x180",
+   "type": "image/png"
+  }
+ ]
+}
