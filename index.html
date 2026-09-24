@@ -436,7 +436,6 @@
       <li class="toc-item" data-section="every-route-to-the-same-place"><a href="#every-route-to-the-same-place">Every Route</a></li>
       <li class="toc-item" data-section="the-problem-every-route-shares"><a href="#the-problem-every-route-shares">Immunology</a></li>
       <li class="toc-item" data-section="the-iteration-loop-is-what-matters"><a href="#the-iteration-loop-is-what-matters">The Loop</a></li>
-      <li class="toc-item" data-section="how-this-gets-paid-for"><a href="#how-this-gets-paid-for">The Staircase</a></li>
       <li class="toc-item" data-section="why-this-is-the-moment"><a href="#why-this-is-the-moment">Why Now</a></li>
       <li class="toc-item" data-section="what-the-economics-look-like"><a href="#what-the-economics-look-like">Economics</a></li>
       <li class="toc-item" data-section="the-bottleneck-after-supply"><a href="#the-bottleneck-after-supply">The Bottleneck</a></li>
@@ -461,7 +460,6 @@
       <li><a href="#every-route-to-the-same-place">Every Route</a></li>
       <li><a href="#the-problem-every-route-shares">Immunology</a></li>
       <li><a href="#the-iteration-loop-is-what-matters">The Loop</a></li>
-      <li><a href="#how-this-gets-paid-for">The Staircase</a></li>
       <li><a href="#why-this-is-the-moment">Why Now</a></li>
       <li><a href="#what-the-economics-look-like">Economics</a></li>
       <li><a href="#the-bottleneck-after-supply">The Bottleneck</a></li>
@@ -546,14 +544,6 @@
       <p class="pullquote">A failed experiment that tells you which mechanism failed is worth more than a successful one that does not.</p>
       <p>Most transplant experiments are scored as survival curves, so a graft that fails at day 40 teaches almost nothing about what to change. Instrumenting the failure is what converts each run into a training example, and a loop that learns from its failures runs on a far larger data set than one that learns only from its successes.</p>
       <p><strong>None of these four parts is novel alone. The integration is what nobody has yet.</strong> Gene editing is a service you can buy. Perfusion rigs are commercial. Immune assays are standard. What does not exist is all four wired together, running continuously, with each cycle's failure shaping the next cycle's design.</p>
-      <h2 id="how-this-gets-paid-for">How this gets paid for</h2>
-      <p>An unlimited organ supply is not a thing anyone funds in one leap. The plausible path is a staircase, where each step is a real business before the one above it exists.</p>
-      <p><strong>Sell the organ as an assay.</strong> A humanised animal organ perfused outside the body is the faithful toxicity test the pharmaceutical industry does not have: intact vascular delivery, real organ function, whole-organ pharmacokinetics. Liver injury has been the single most common reason drugs are pulled from the market for fifty years running, accounting for 18% of the 462 products withdrawn worldwide between 1953 and 2013. And the regulator's own position is that a normal trial of one to three thousand patients is too small to find it. An industry is hunting its most expensive failure mode with an instrument that cannot see it.</p>
-      <p><strong>Let every paid run be an experiment.</strong> Each dosing run is a causal, time-resolved recording of what an intervention does to a whole human-compatible organ. The customer funds the measurement and the data accumulates. Nobody without perfusable human-compatible organs can generate that signal at all.</p>
-      <p><strong>Turn the data into a design loop.</strong> Run forward, a model predicts what a modification or a conditioning protocol does. Run in reverse, it proposes which modifications reach a target, a graft that functions and is accepted. The bench then tests the proposal before it goes anywhere near a human. A match advances it, a miss trains the next design.</p>
-      <p><strong>Replace organs in the people already out of options.</strong> Start where age has driven an organ toward failure and the risk and benefit are unambiguous: the aging kidney headed for dialysis, the failing aging heart. Unlimited supply permits operating earlier than scarcity ever allowed.</p>
-      <p><strong>Move it earlier, until it is elective.</strong> Once organs are something you can make, you stop waiting for one to fail before replacing it. You replace it early, the way people already replace a hip at sixty or get laser eye surgery instead of living in glasses.</p>
-      <p>The drug-testing business and the organ-abundance goal are not distractions from each other. Same organs, same rigs, same expertise, two stages of one technical programme.</p>
       <h2 id="why-this-is-the-moment">Why this is the moment</h2>
       <p>There is a second reason this is the moment, and it has nothing to do with biology. The era in which the best risk-adjusted return came from selling copies of a string is closing. Marginal costs are no longer zero, margins are compressing, and capital that spent fifteen years crowding into software is looking for industries where the hard part is physical.</p>
       <p class="pullquote">You cannot prompt an organ into existence. The information does not exist in the literature. It exists only in the organ, and only if someone runs the experiment.</p>
@@ -633,7 +623,7 @@
     (function() {
       var toc = document.getElementById('toc');
       var items = toc.querySelectorAll('.toc-item');
-      var sections = ['supply', 'what-changed', 'the-durability-problem', 'why-replacement-beats-repair', 'why-this-is-a-longevity-question', 'every-route-to-the-same-place', 'the-problem-every-route-shares', 'the-iteration-loop-is-what-matters', 'how-this-gets-paid-for', 'why-this-is-the-moment', 'what-the-economics-look-like', 'the-bottleneck-after-supply', 'what-could-stop-this', 'what-needs-to-happen-now', 'the-leap'];
+      var sections = ['supply', 'what-changed', 'the-durability-problem', 'why-replacement-beats-repair', 'why-this-is-a-longevity-question', 'every-route-to-the-same-place', 'the-problem-every-route-shares', 'the-iteration-loop-is-what-matters', 'why-this-is-the-moment', 'what-the-economics-look-like', 'the-bottleneck-after-supply', 'what-could-stop-this', 'what-needs-to-happen-now', 'the-leap'];
       var essay = document.getElementById('thesis');
       function update() {
         var essayTop = essay.getBoundingClientRect().top + window.scrollY;
