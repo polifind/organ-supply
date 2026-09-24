@@ -175,6 +175,26 @@
       margin-bottom: 0.7rem;
       break-after: avoid;
     }
+
+    .essay-body .fig {
+      margin: 2.4rem 0 2rem;
+    }
+    .essay-body .fig img {
+      display: block;
+      width: 100%;
+      height: auto;
+      mix-blend-mode: multiply;
+    }
+    .essay-body .fig figcaption {
+      margin-top: 0.7rem;
+      font-size: 0.82em;
+      font-style: italic;
+      line-height: 1.5;
+      color: #6b6560;
+    }
+    @media (min-width: 768px) {
+      .essay-body .fig { margin: 3rem 0 2.6rem; }
+    }
     .essay-body .closing {
       font-weight: 500;
       border-top: 1px solid #ddd;
@@ -243,7 +263,27 @@
       .essay-body .lead { font-size: 23px; }
       .essay-body .pullquote { font-size: 24px; margin: 1.8rem 0; padding: 0.3rem 0 0.3rem 1.2rem; }
       .essay-body h2 { font-size: 29px; margin-top: 2.8rem; margin-bottom: 0.9rem; }
-      .essay-body .closing { padding-top: 1rem; margin-top: 0.5rem; }
+  
+    .essay-body .fig {
+      margin: 2.4rem 0 2rem;
+    }
+    .essay-body .fig img {
+      display: block;
+      width: 100%;
+      height: auto;
+      mix-blend-mode: multiply;
+    }
+    .essay-body .fig figcaption {
+      margin-top: 0.7rem;
+      font-size: 0.82em;
+      font-style: italic;
+      line-height: 1.5;
+      color: #6b6560;
+    }
+    @media (min-width: 768px) {
+      .essay-body .fig { margin: 3rem 0 2.6rem; }
+    }
+    .essay-body .closing { padding-top: 1rem; margin-top: 0.5rem; }
     }
     @media (min-width: 768px) {
       .hero { padding: 3rem 2.5rem; }
@@ -454,9 +494,8 @@
       <li class="toc-item" data-section="why-replacement-beats-repair"><a href="#why-replacement-beats-repair">Repair vs Replacement</a></li>
       <li class="toc-item" data-section="why-this-is-a-longevity-question"><a href="#why-this-is-a-longevity-question">Longevity</a></li>
       <li class="toc-item" data-section="every-route-to-the-same-place"><a href="#every-route-to-the-same-place">Every Route</a></li>
-      <li class="toc-item" data-section="why-this-is-the-moment"><a href="#why-this-is-the-moment">Why Now</a></li>
+      <li class="toc-item" data-section="why-now-biology-capital-and-ai"><a href="#why-now-biology-capital-and-ai">Why Now</a></li>
       <li class="toc-item" data-section="what-the-economics-look-like"><a href="#what-the-economics-look-like">Economics</a></li>
-      <li class="toc-item" data-section="the-bottleneck-after-supply"><a href="#the-bottleneck-after-supply">The Bottleneck</a></li>
       <li class="toc-item" data-section="what-needs-to-happen-now"><a href="#what-needs-to-happen-now">What Happens Now</a></li>
       <li class="toc-item" data-section="the-leap"><a href="#the-leap">The Leap</a></li>
     </ul>
@@ -475,9 +514,8 @@
       <li><a href="#why-replacement-beats-repair">Repair vs Replacement</a></li>
       <li><a href="#why-this-is-a-longevity-question">Longevity</a></li>
       <li><a href="#every-route-to-the-same-place">Every Route</a></li>
-      <li><a href="#why-this-is-the-moment">Why Now</a></li>
+      <li><a href="#why-now-biology-capital-and-ai">Why Now</a></li>
       <li><a href="#what-the-economics-look-like">Economics</a></li>
-      <li><a href="#the-bottleneck-after-supply">The Bottleneck</a></li>
       <li><a href="#what-needs-to-happen-now">What Happens Now</a></li>
       <li><a href="#the-leap">The Leap</a></li>
     </ul>
@@ -516,9 +554,11 @@
       <h2 id="the-durability-problem">The durability problem</h2>
       <p>Today's pig organs do not last. The longest any has worked in a living person is <a href="https://pubmed.ncbi.nlm.nih.gov/41935634/" target="_blank" rel="noopener"><strong>271 days</strong></a>, about nine months, before the graft failed at its blood vessels. That patient returned to dialysis and later received a human kidney, the first person ever to cross from a pig organ to a human one. The bridge holds. It is just far too short.</p>
       <p class="pullquote">This is engineering, not discovery. A pig organ can keep a person alive. What nobody knows yet is which modifications make it last.</p>
-      <p>It helps to know how foreign a pig actually is. Aligning the pig and human versions of 31 kidney surface proteins gives a median sequence identity of <strong>about 80 percent</strong>, but the spread runs from <strong>44 to 96 percent</strong>, and the shape of that spread is the important part. Divergence concentrates in precisely the proteins the immune system inspects. The complement regulators <strong>CD46</strong>, <strong>CD59</strong> and <strong>CD55</strong> come in at <strong>45, 49 and 53 percent</strong> identity, and the adhesion molecules <strong>ICAM1</strong> and <strong>ICAM2</strong> at around <strong>55 percent</strong>. Structural and metabolic proteins are nearly interchangeable: the water channel <strong>AQP1</strong> at <strong>93 percent</strong>, the vascular enzyme <strong>NOS3</strong> at <strong>96 percent</strong>.</p>
-      <p class="pullquote">A pig is not uniformly foreign. It is nearly human in the machinery that makes an organ work, and conspicuously foreign in the handful of proteins the immune system inspects.</p>
-      <p>That is what makes the engineering tractable. You are not rebuilding a species. You are editing a short list of the most divergent surfaces and swapping in the human versions of the regulators that tell complement to stand down. The cost is that the recipient still needs immunosuppressive drugs, which are blunt enough to cause their own harm, so every antigen removed is a drug the patient need not take.</p>
+      <p>A pig kidney is not uniformly foreign. It is close to human in the machinery that makes an organ work, and conspicuously foreign in a handful of surface proteins the immune system inspects. That is what makes the engineering tractable: you are not rebuilding a species, only editing the surfaces the body objects to. The cost is that the recipient still needs immunosuppressive drugs, which are blunt enough to cause their own harm, so every antigen removed is a drug the patient need not take.</p>
+      <figure class="fig">
+        <img src="kidneys.png" alt="Two kidneys painted in watercolor, a pig kidney and a human kidney side by side, similar in shape and size" width="1700" height="1020" loading="lazy" decoding="async">
+        <figcaption>The organ itself is not the hard part. A pig kidney is close to a human one in size, shape and plumbing. The difficulty is in a handful of proteins on its surface.</figcaption>
+      </figure>
       <p>Those modifications can be found. The plausible combinations are enormous in number; the ones worth trying are not. The limit was never anyone's understanding of rejection. <strong>It was speed.</strong> Testing one combination has meant building a whole animal and waiting years for a single answer, and no one can search a large space at that rate. That is now changing.</p>
       <h2 id="why-replacement-beats-repair">Why replacement beats repair</h2>
       <p>Most of the money aimed at aging goes to <em>repair</em>: drugs that clear out worn-out cells, treatments that try to wind a cell's internal clock backwards, lab-grown tissue meant to regrow function where it has been lost. Every one of those tries to make an old organ young again. That is the harder route, and probably the wrong one.</p>
@@ -542,10 +582,10 @@
       <p><strong>Stripping a donor organ to its scaffold</strong> and reseeding it with the recipient's own cells, so the structure is natural and the cells are not foreign, demonstrated in animals but recovering only partial function.</p>
       <p><strong>Printing the organ.</strong> The most general solution and the furthest away, because printing a network of capillaries at the fineness a kidney needs is not a scaling problem but an unsolved one.</p>
       <p><strong>Better use of the organs that already exist.</strong> Keeping a donor organ alive on a pump, rather than on ice, creates no new supply but recovers a meaningful fraction of what is currently discarded, and it works today.</p>
-      <p class="pullquote">These are not competitors. They are parallel attempts on the same wall, and the field cannot yet tell which will break through.</p>
+      <p class="pullquote">These are not competitors. They are parallel attempts on the same wall.</p>
       <p>They are unlikely all to fail and unlikely all to succeed. The winner cannot be identified from here, which makes seriously funding several of them the only rational posture.</p>
-      <h2 id="why-this-is-the-moment">Why this is the moment</h2>
-      <p>There is a second reason this is the moment, and it has nothing to do with biology. The era when the best risk-adjusted return came from selling copies of a string is ending. Marginal costs are no longer zero, margins are compressing, and capital that spent fifteen years crowding into software now seeks industries where the hard part is physical.</p>
+      <h2 id="why-now-biology-capital-and-ai">Why now: biology, capital and AI</h2>
+      <p>The biology only just became possible. Two other things arrived at the same time. The era when the best risk-adjusted return came from selling copies of a string is ending. Marginal costs are no longer zero, margins are compressing, and capital that spent fifteen years crowding into software now seeks industries where the hard part is physical.</p>
       <p class="pullquote">You cannot prompt an organ into existence. The information is not in the literature. It lives only in the organ, and only if someone runs the experiment.</p>
       <p>That is the defensible position in this field. Observational data describes states already seen; it cannot predict interventions never tried. Animal models mispredict human outcomes and cannot run at the coverage required. No model, however capable, can deduce what a given modification does to a given organ until someone does the experiment. The value accrues to whoever generates the data, not to whoever reads it.</p>
       <p><strong>But the design half of the loop is being transformed, and fast.</strong> In July 2025 experimental reasoning models from two separate labs each solved five of the six problems at the <a href="https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/" target="_blank" rel="noopener">International Mathematical Olympiad</a>, scoring 35 of 42 under contest conditions on problems kept confidential until the exam began. One of the two was later graded at gold-medal standard by the competition's own coordinators. The life-science equivalent arrived next: a multi-agent system published in <a href="https://www.nature.com/articles/s41586-026-10644-y" target="_blank" rel="noopener">*Nature* in 2026</a> generated hypotheses that were then validated in the laboratory, identifying drug-repurposing candidates for acute myeloid leukaemia confirmed in vitro and proposing a mechanism of bacterial gene transfer that matched unpublished experimental work. The first drug whose target and molecule were both AI-derived is reported to have entered late-stage trials in 2026.</p>
@@ -563,12 +603,6 @@
       <p>The market values those businesses at about <strong>$25 billion combined</strong>, less than a single year of their revenue, pricing dialysis as an annuity on a population that cannot get better rather than as a growth industry. <strong>A cure is precisely what a durable organ is.</strong> The incumbent valuation is not this category's ceiling. It is the floor being replaced.</p>
       <p>The surgery itself ranks among the most valuable in medicine: billed charges for a double-lung transplant reach <a href="https://www.milliman.com/en/insight/2025-us-organ-and-tissue-transplants-costs-utilization" target="_blank" rel="noopener"><strong>$2.3 million</strong></a>, a heart <strong>$1.9 million</strong>. Today the binding input is free and unobtainable, a dead stranger who matches. <strong>Make that input manufacturable and the scarcest step in the most expensive procedures in medicine becomes a product with a supplier.</strong></p>
       <p>Whoever produces organs at scale is not selling a therapy for one disease. They are selling the part, for most of the ways people die. Price a durable replacement below the lifetime cost of managing the failure and the arithmetic works in every organ market at once. <strong>That is a trillion-dollar position, and it will not stay entirely private.</strong> Every developed government has already decided organ allocation is too consequential to leave to markets, and manufacturing does nothing to reverse that judgment. Expect a regulated utility of extraordinary scale rather than an unconstrained monopoly, which is still one of the most valuable things anyone could build.</p>
-      <h2 id="the-bottleneck-after-supply">The bottleneck after supply</h2>
-      <p>Solve supply and the constraint moves. It does not disappear.</p>
-      <p>The constraint moves to capacity. Surgeons do not scale the way a barn does, and neither do operating rooms. The American Society of Transplant Surgeons has on the order of two thousand members. It takes over a decade to train one, and that has not moved in a generation.</p>
-      <p><strong>This constraint can be relieved today, before any of the biology lands.</strong> Expand training positions, fund fellowships, build operating room capacity. The decision about how many surgeons exist in 2040 is being made this year, by default, by not making it.</p>
-      <p>The longer-run answer is robotics, and it is the most speculative claim here, so it is better marked than buried. The operation is a mechanical task in a confined field at millimetre tolerances, a fair description of what robotics is improving at fastest. Autonomy does not have to arrive on a particular schedule, only before unlimited organs make surgeon-hours the binding constraint.</p>
-      <p class="pullquote">The ceiling is not biology and it is not supply. It is how many operations a civilisation can perform in a day.</p>
       <h2 id="what-needs-to-happen-now">What needs to happen now</h2>
       <p>The parts of this outside the laboratory have longer lead times than the parts inside it, and almost every link in the chain is understaffed, underfunded or unprepared.</p>
       <p><strong>Surgeons and the people who train them.</strong> Open more training positions this year, because the pipeline is longer than the biology.</p>
@@ -577,7 +611,7 @@
       <p><strong>Regulators worldwide.</strong> Decide now what the approval pathway is for a manufactured organ, and what the evidentiary standard for durability is when the endpoint is ten years and the trial cannot be.</p>
       <p><strong>Industrial operators.</strong> Build the designated-pathogen-free facilities, cold chain and quality systems, because this is a physical supply chain like any other.</p>
       <p><strong>Payers and health systems.</strong> Model what happens to costs when a durable organ becomes purchasable, and do it before the first invoice.</p>
-      <p>Two other curves are bending underneath all of it: software that designs and predicts, and robotics that will eventually relieve the surgical constraint. Neither substitutes for the biology. Both change how quickly it can be searched.</p>
+      <p>Two other curves are bending underneath all of it: software that designs and predicts, and robotics that will eventually relieve the shortage of surgeons and operating rooms that unlimited organs would expose. Neither substitutes for the biology. Both change how quickly it can be searched.</p>
       <p class="pullquote">None of this requires anyone to agree about pigs. It only requires agreeing that Organ Abundance is coming, and that the parts outside the laboratory have the longer lead times.</p>
       <h2 id="the-leap">The leap</h2>
       <p>Most predictions ask you to believe something that has not happened yet. This one rests on something that already has. <strong>A pig organ has kept a person alive.</strong> What remains is making it last.</p>
@@ -620,7 +654,7 @@
     (function() {
       var toc = document.getElementById('toc');
       var items = toc.querySelectorAll('.toc-item');
-      var sections = ['supply', 'what-changed', 'the-durability-problem', 'why-replacement-beats-repair', 'why-this-is-a-longevity-question', 'every-route-to-the-same-place', 'why-this-is-the-moment', 'what-the-economics-look-like', 'the-bottleneck-after-supply', 'what-needs-to-happen-now', 'the-leap'];
+      var sections = ['supply', 'what-changed', 'the-durability-problem', 'why-replacement-beats-repair', 'why-this-is-a-longevity-question', 'every-route-to-the-same-place', 'why-now-biology-capital-and-ai', 'what-the-economics-look-like', 'what-needs-to-happen-now', 'the-leap'];
       var essay = document.getElementById('thesis');
       function update() {
         var essayTop = essay.getBoundingClientRect().top + window.scrollY;
