@@ -62,7 +62,7 @@
       min-height: 100svh;
       max-width: 1100px;
       margin: 0 auto;
-      padding: 3.5rem 1.25rem 1.5rem;
+      padding: 4.5rem 1.25rem 1.5rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -143,9 +143,9 @@
       margin-bottom: 1.5rem;
     }
     .essay-title {
-      font-size: 26px;
+      font-size: 30px;
       font-weight: 700;
-      line-height: 1.2;
+      line-height: 1.18;
       margin-bottom: 0.4rem;
     }
     .essay-subtitle {
@@ -158,8 +158,8 @@
       columns: 1;
     }
     .essay-body p {
-      font-size: 18px;
-      line-height: 1.65;
+      font-size: 19px;
+      line-height: 1.7;
       margin-bottom: 1rem;
       text-align: left;
       hyphens: none;
@@ -175,16 +175,16 @@
       font-weight: 600;
     }
     .essay-body .pullquote {
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 600;
-      line-height: 1.4;
+      line-height: 1.42;
       color: #111;
       border-left: 3px solid #111;
-      padding: 0.2rem 0 0.2rem 1rem;
-      margin: 1.2rem 0;
+      padding: 0.15rem 0 0.15rem 0.85rem;
+      margin: 1.5rem 0;
     }
     .essay-body h2 {
-      font-size: 25px;
+      font-size: 24px;
       font-weight: 700;
       font-variant: small-caps;
       letter-spacing: 0.05em;
@@ -194,15 +194,28 @@
     }
     @media (min-width: 768px) {
   
-    .essay-body .fig {
-      margin: 2.4rem 0 2rem;
-    }
+    /* figure: portrait-tight variant on phones */
+    .essay-body .fig { margin: 1.8rem 0 1.6rem; }
     .essay-body .fig img {
       display: block;
       width: 100%;
+      max-width: 100%;
       height: auto;
       mix-blend-mode: multiply;
     }
+    .essay-body .fig .wide { display: none; }
+    .essay-body .fig .tall { display: block; }
+    @media (min-width: 768px) {
+      .essay-body .fig { margin: 2.4rem 0 2rem; }
+      .essay-body .fig .wide { display: block; }
+      .essay-body .fig .tall { display: none; }
+    }
+    /* long tokens must never force horizontal scroll */
+    .essay-body, .essay-body p, .essay-body .pullquote, .essay-body h2 {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+    html, body { overflow-x: hidden; }
     .essay-body .fig figcaption {
       margin-top: 0.7rem;
       font-size: 0.8em;
@@ -318,11 +331,11 @@
     /* ---- Hamburger + overlay nav ---- */
     .nav-toggle {
       position: fixed;
-      top: 1.25rem;
-      right: 1.25rem;
+      top: 1rem;
+      right: 1rem;
       z-index: 200;
-      width: 40px;
-      height: 40px;
+      width: 44px;
+      height: 44px;
       background: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
@@ -401,11 +414,12 @@
     .toc {
       display: none;
     }
-    @media (min-width: 1100px) {
+    @media (min-width: 1160px) {
       .toc {
         display: block;
         position: fixed;
-        left: 2.5rem;
+        left: max(1.25rem, calc((100vw - 680px) / 2 - 13.5rem));
+        max-width: 11rem;
         top: 50%;
         transform: translateY(-50%);
         z-index: 100;
@@ -553,7 +567,8 @@
       <p class="pullquote">This is engineering, not discovery. A pig organ can keep a person alive. What nobody knows yet is which modifications make it last.</p>
       <p>A pig kidney is not uniformly foreign. It is close to human in the machinery that makes an organ work, and conspicuously foreign in the surface proteins the immune system inspects. That narrows the problem without making it easy. You are not rebuilding a species, but the surfaces the body objects to are the ones the organ also needs in order to function, which is why removing them has proved harder than finding them. The cost is that the recipient still needs immunosuppressive drugs, which are blunt enough to cause their own harm, so every antigen removed is a drug the patient need not take.</p>
       <figure class="fig">
-        <img src="https://www.organabundance.com/kidneys.png" alt="Cutaway watercolor of a pig kidney and a human kidney side by side, showing cortex, medullary pyramids, the branching renal vessels and the collecting pelvis" width="1700" height="1020" loading="lazy" decoding="async">
+        <img class="wide" src="https://www.organabundance.com/kidneys.png" alt="Cutaway watercolor of a pig kidney and a human kidney side by side, showing cortex, medullary pyramids, the branching renal vessels and the collecting pelvis" width="1700" height="1020" loading="lazy" decoding="async">
+        <img class="tall" src="https://www.organabundance.com/kidneys-mobile.png" alt="Cutaway watercolor of a pig kidney and a human kidney side by side, showing cortex, medullary pyramids, the branching renal vessels and the collecting pelvis" width="900" height="760" loading="lazy" decoding="async">
         <figcaption>The organ itself is not the hard part. A pig kidney is close to a human one in size, shape and plumbing. What is hard sits on its surface, in the proteins the immune system reads. Decades of work have not yet made them acceptable to a human body for longer than months.</figcaption>
       </figure>
       <p>Those modifications can be found. The plausible combinations are enormous in number; the ones worth trying are not. The limit was never anyone's understanding of rejection. <strong>It was speed.</strong> Testing one combination has meant building a whole animal and waiting years for a single answer, and no one can search a large space at that rate. That is now changing.</p>
@@ -655,8 +670,8 @@
       var sections = ['supply', 'what-changed', 'the-durability-problem', 'why-replacement-beats-repair', 'why-this-is-a-longevity-question', 'every-route-to-the-same-place', 'why-now-biology-capital-and-ai', 'what-the-economics-look-like', 'what-needs-to-happen-now', 'the-leap'];
       var essay = document.getElementById('thesis');
       function update() {
-        var essayTop = essay.getBoundingClientRect().top + window.scrollY;
-        toc.classList.toggle('visible', window.scrollY > essayTop * 0.6);
+        var essayInView = essay.getBoundingClientRect().top < window.innerHeight * 0.35;
+        toc.classList.toggle('visible', essayInView);
         var current = sections[0];
         for (var i = 0; i < sections.length; i++) {
           var el = document.getElementById(sections[i]);
