@@ -468,6 +468,23 @@
       font-weight: 500;
     }
     .hero-image img { mix-blend-mode: multiply; }
+
+    .clocks {
+      margin-top: 1.75rem;
+      text-align: center;
+      font-family: 'EB Garamond', 'Georgia', serif;
+      font-size: 16px;
+      color: #aaa;
+      letter-spacing: 0.01em;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: 1.4rem;
+      flex-wrap: wrap;
+    }
+    .clocks .city { white-space: nowrap; }
+    .clocks .city .sep { margin: 0 0.35em; }
+    .clocks .city .label { font-variant: small-caps; letter-spacing: 0.06em; }
     .essay-footer {
       margin-top: 2rem;
       font-style: italic;
@@ -624,6 +641,11 @@
       <a class="share-btn" id="share-x" href="#" target="_blank" rel="noopener">Share on X</a>
       <button class="share-btn" id="copy-link">Copy link</button>
     </div>
+    <div class="clocks" id="clocks" aria-label="Local time in San Francisco, Boston and New York">
+      <span class="city"><span data-tz="America/Los_Angeles">--:--</span><span class="sep">&middot;</span><span class="label">SF</span></span>
+      <span class="city"><span data-tz="America/New_York">--:--</span><span class="sep">&middot;</span><span class="label">Boston</span></span>
+      <span class="city"><span data-tz="America/New_York">--:--</span><span class="sep">&middot;</span><span class="label">NYC</span></span>
+    </div>
   </article>
 
   <script>
@@ -687,6 +709,25 @@
         setTimeout(function() { btn.textContent = 'Copy link'; }, 2000);
       });
     });
+
+    (function() {
+      var spans = document.querySelectorAll('#clocks [data-tz]');
+      function tick() {
+        var now = new Date();
+        spans.forEach(function(el) {
+          try {
+            el.textContent = now.toLocaleTimeString('en-GB', {
+              timeZone: el.getAttribute('data-tz'),
+              hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+            });
+          } catch (e) {
+            el.textContent = '';
+          }
+        });
+      }
+      tick();
+      setInterval(tick, 10000);
+    })();
   </script>
 </body>
 </html>
